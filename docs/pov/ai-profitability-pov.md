@@ -2,7 +2,7 @@
 
 ## The problem
 
-AI economics conversations often begin with consumption:
+AI economics conversations often begin with AI consumption:
 
 ```text
 tokens
@@ -13,45 +13,27 @@ latency
 cloud cost
 ```
 
-Those measures are necessary, but they answer only:
+Those measures matter, but they start too late in the reasoning.
 
-> **What are we consuming?**
+The first question should be:
 
-The harder business question is:
+> **What work are we trying to accomplish?**
 
-> **What are we getting for that consumption, and what should we do about it?**
-
-Cost optimization alone cannot answer whether an AI investment is economically worthwhile.
+Only then should we ask what AI resources are required, whether those resources produce acceptable work, whether that work changes a business outcome, and whether the resulting economics justify further investment.
 
 ---
 
 ## Our point of view
 
-> **AI profitability is the ability to convert AI consumption into verified, economically valuable outcomes with enough evidence to support an investment decision.**
+> **AI profitability is the ability to convert investment in AI into Accepted Work and economically valuable outcomes with enough evidence to support an investment decision.**
 
-That means connecting:
+**Accepted Work** is work that meets the acceptance criteria required for the job being performed.
 
-```text
-Consumption
-    ↓
-Useful Work
-    ↓
-Verification
-    ↓
-Business Outcome
-    ↓
-Economic Value
-    ↓
-Evidence
-    ↓
-Action
-```
-
-Several distinctions are fundamental:
+This distinction matters because:
 
 ```text
-AI activity ≠ useful work
-Useful work ≠ business outcome
+AI activity ≠ Accepted Work
+Accepted Work ≠ business outcome
 Observed outcome ≠ incremental outcome
 Modeled value ≠ realized value
 Lower cost ≠ better economics
@@ -63,44 +45,136 @@ The objective is therefore not simply to minimize AI cost.
 
 ---
 
-## The AI Profitability motion
+# Five questions for AI Profitability
 
-We reason through nine questions:
+For broad organizational use, AI Profitability can be framed through five questions.
 
-### FRAME
-**What job or investment decision are we trying to improve?**
+## 1. WORK
 
-Define the unit of work and the decision before measuring consumption.
+> **What work are we trying to accomplish?**
 
-### MEASURE
-**What resources does the work consume?**
+Start with the job, workflow, customer need, or business decision—not the AI.
 
-Combine relevant cost, runtime, infrastructure, tool, and human-effort evidence.
+Define:
 
-Keep measured cost distinct from allocated or modeled cost.
+- what success means,
+- the relevant unit of work,
+- and the criteria that make the work acceptable.
 
-### VERIFY
-**What counts as useful work?**
+Examples might include resolving a case, completing an engineering task, processing a document, assisting a customer, or completing a workflow.
 
-AI activity should count economically only when it meets the workload's required quality, control, or acceptance criteria.
+Different scenarios define work differently.
 
-### OUTCOME
-**What meaningful business or workflow result should change?**
+The question remains the same.
 
-Technical success alone does not establish business value.
+---
 
-### VALUE
-**What is that change economically worth?**
+## 2. MEASURE
 
-Keep modeled, observed, incremental, and realized value distinct.
+> **What did it consume, and how much Accepted Work did it produce?**
 
-### TEST
-**How much should we believe the economic conclusion?**
+Measure the resources required to perform the work:
 
-Evaluate both the strength of the evidence and the resilience of the economics to assumptions.
+```text
+model usage
+tokens
+tools
+retrieval
+compute
+cloud infrastructure
+latency
+retries
+human effort
+```
 
-### DECIDE
-**What action does the current evidence support?**
+Then connect consumption to work that actually satisfies the acceptance criteria.
+
+Conceptually:
+
+```text
+AI Resources
+      ↓
+AI Activity
+      ↓
+Acceptance Criteria
+      ↓
+Accepted Work
+```
+
+This is where AI evaluation becomes part of economics.
+
+A cheaper system is not necessarily better if it produces less Accepted Work.
+
+---
+
+## 3. OUTCOME
+
+> **What changed?**
+
+Accepted Work is not automatically business value.
+
+The next question is whether it changed something meaningful in the business, product, or workflow.
+
+Examples might include:
+
+```text
+case resolved
+workflow completed
+cycle time reduced
+manual work avoided
+engineering task accepted
+conversion improved
+customer task completed
+defect avoided
+```
+
+Where causal claims matter, observed change should be distinguished from incremental change.
+
+---
+
+## 4. VALUE
+
+> **What was that change worth, and how credible is the claim?**
+
+Economic value may come from:
+
+```text
+revenue gained
+cost avoided
+capacity released
+margin improved
+risk reduced
+cycle time shortened
+customer value created
+```
+
+But the evidence status matters.
+
+Keep separate:
+
+```text
+measured
+observed
+allocated
+modeled
+incremental
+realized
+unknown
+```
+
+A large modeled benefit with weak evidence should not silently become a recommendation to scale.
+
+Likewise, sensitivity analysis can test whether an economic model is resilient without proving that the modeled value was realized.
+
+---
+
+## 5. ACTION
+
+> **What should we do next?**
+
+The purpose of AI Profitability is not simply to calculate ROI.
+
+It is to improve the investment decision.
 
 Possible actions may include:
 
@@ -114,71 +188,107 @@ PAUSE
 RETIRE
 ```
 
-### ACT
-**What should happen next?**
+For example:
 
-Translate the decision into an investment, architecture, operating, or evidence-gathering action.
+```text
+Evidence deficit
+→ PROVE
 
-### REASSESS
-**What changed, and what should the next dollar accomplish?**
+Execution inefficiency
+→ OPTIMIZE
 
-AI economics evolve as usage, architecture, pricing, models, and business conditions change.
+Structural economic problem
+→ RESTRUCTURE
+
+Strong evidence + attractive next-dollar economics
+→ SCALE
+```
+
+Every action should also establish what needs to be reassessed next.
 
 ---
 
-## Two complementary perspectives
+# How Token-to-Value fits
 
-### Consumption-to-Value
+Token-to-Value should not be treated as a separate framework that ends where Value-to-Action begins.
+
+Instead:
+
+> **Token-to-Value is the measurement discipline that helps Value-to-Action reason correctly about AI consumption, Accepted Work, outcomes, and economics.**
+
+It contributes evidence such as:
+
+```text
+AI consumption
+cost
+Accepted Work
+cost per Accepted Work
+execution efficiency
+outcome evidence
+economic estimates
+```
+
+Its central question is:
 
 > **What are we getting for the AI resources we consume?**
 
-```text
-FRAME → MEASURE → VERIFY → OUTCOME → VALUE
-```
-
-This moves the conversation beyond token counting and infrastructure cost toward useful work and economic outcomes.
-
-### Value-to-Action
-
-> **Given the value and evidence, what should we do with the investment?**
-
-```text
-VALUE → TEST → DECIDE → ACT → REASSESS
-```
-
-This moves the conversation beyond ROI estimation toward an evidence-backed decision.
-
-Together they form an **AI Value Loop**.
+That measurement evidence then becomes one input into the broader decision process.
 
 ---
 
-## What should be standardized
+# How Value-to-Action fits
+
+Value-to-Action provides the broader decision discipline.
+
+It starts with the work and intended outcome, incorporates measurement evidence, evaluates economic value and evidence quality, and determines what action is justified.
+
+Conceptually:
+
+```text
+WORK
+  ↓
+FRAME / MEASURE
+  ↓
+Accepted Work
+  ↓
+OUTCOME
+  ↓
+VALUE
+  ↓
+TEST
+  ↓
+DECIDE
+  ↓
+ACT
+  ↓
+REASSESS
+```
+
+Token-to-Value strengthens the measurement and economics within this flow.
+
+Value-to-Action governs how the evidence becomes a decision.
+
+---
+
+# Standardize the questions, customize the answers
 
 Across AI workloads, teams should consistently ask:
 
 ```text
-What is the unit of work?
-What resources are consumed?
-What counts as useful work?
-How is it verified?
-What business outcome should change?
-What is that outcome worth?
+What work are we trying to accomplish?
+What resources are required?
+What counts as Accepted Work?
+What outcome should change?
+What is that change worth?
 What evidence supports the claim?
 What action is justified?
-What should we learn next?
 ```
 
-These questions are reusable.
-
----
-
-## What should be customized
-
-Different partner types and workloads should define their own:
+But different partner types and workloads should define their own:
 
 ```text
 unit of work
-useful-work criteria
+acceptance criteria
 verification method
 business outcome
 value mechanism
@@ -191,20 +301,20 @@ Therefore:
 
 > **Standardize the reasoning and evidence discipline. Customize the workload and business semantics deliberately.**
 
-An SI helping a customer justify an AI transformation and an ISV evaluating the economics of an AI product feature can use the same reasoning model without using the same metrics.
+An SI helping a customer justify an AI transformation and an ISV evaluating an AI product feature can use the same reasoning without using the same metrics.
 
 ---
 
-## Cost truth and value truth are different
+# Cost truth and value truth are different
 
-No single system owns AI profitability.
+No single system owns AI Profitability.
 
 ```text
 COST / USAGE
 FinOps, billing, infrastructure, runtime telemetry
         │
         +
-USEFUL WORK
+ACCEPTED WORK
 Evaluation, acceptance, workflow evidence
         │
         +
@@ -221,17 +331,17 @@ DECISION
 
 FinOps can provide cost truth.
 
-Runtime and evaluation systems provide work and quality evidence.
+Runtime and evaluation systems provide work and acceptance evidence.
 
 Business systems provide outcome evidence.
 
 Economic reasoning connects those sources to an investment decision.
 
-They should be joined without pretending they are the same evidence.
+They should be joined without pretending they represent the same kind of evidence.
 
 ---
 
-## Microsoft platform perspective
+# Microsoft platform perspective
 
 AI Profitability is broader than any individual product.
 
@@ -251,33 +361,33 @@ Business outcomes
 → partner/customer operational systems
 ```
 
-The conversation should start with the partner's economic problem and then connect the appropriate capabilities—not start from a product catalog.
+The conversation should start with the work and economic problem, then connect the appropriate capabilities—not start from a product catalog.
 
 ---
 
-## What good looks like
+# What good looks like
 
 A useful AI Profitability conversation should leave the partner clearer on:
 
-1. What decision are we trying to make?
-2. What useful work are we paying for?
-3. What does that work actually cost?
-4. What outcome should it influence?
+1. What work are we trying to accomplish?
+2. What counts as Accepted Work?
+3. What does that work actually consume and cost?
+4. What outcome should change?
 5. What evidence do we have?
 6. What value can we reasonably claim?
 7. What remains unknown?
 8. What should we do next?
 
-The goal is not necessarily to conclude:
+The goal is not necessarily:
 
 > “AI is profitable.”
 
 The goal is:
 
-> **“We understand the economics and evidence well enough to know the next best action.”**
+> **“We understand the work, economics, and evidence well enough to know the next best action.”**
 
 ---
 
-## Working principle
+# Working principle
 
-> **Standardize the reasoning. Preserve evidence boundaries. Translate the economics to the partner's workload. Use the evidence to decide what happens next.**
+> **Start with the work. Measure Accepted Work, not just AI activity. Preserve evidence boundaries. Translate the economics to the partner's context. Use the evidence to decide what happens next.**

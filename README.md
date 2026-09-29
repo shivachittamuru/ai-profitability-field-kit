@@ -4,23 +4,44 @@ AI adoption increasingly raises a practical business question:
 
 > **Can we demonstrate that the economic value created by AI justifies the resources invested in it?**
 
-The AI Profitability Field Kit helps Microsoft practitioners and partners connect:
-
-```text
-AI Consumption
-      ↓
-Useful Work
-      ↓
-Business Outcome
-      ↓
-Economic Value
-      ↓
-Evidence
-      ↓
-Investment Decision
-```
+The AI Profitability Field Kit helps Microsoft practitioners and partners connect AI investment to **Accepted Work, business outcomes, economic value, evidence, and action**.
 
 The goal is to make AI profitability conversations **simple, confident, repeatable, and adaptable** across partner types and AI use cases.
+
+---
+
+## A simple way to frame the conversation
+
+The field kit starts with the work, not the technology:
+
+```text
+WORK
+What work are we trying to accomplish?
+
+        ↓
+
+MEASURE
+What did it consume, and how much Accepted Work did it produce?
+
+        ↓
+
+OUTCOME
+What changed?
+
+        ↓
+
+VALUE
+What was that change worth, and how credible is the claim?
+
+        ↓
+
+ACTION
+What should we do next?
+```
+
+**Accepted Work** means AI-assisted work that meets the acceptance criteria required for the job being performed.
+
+AI activity becomes economically meaningful only when it produces work that is actually acceptable for its intended purpose.
 
 ---
 
@@ -44,7 +65,7 @@ See how the approach translates across SI, services, SDC/ISV, agentic, software-
 ### Running a working session?
 → [AI Profitability Engagement Canvas](docs/canvas/engagement-canvas.md)
 
-Capture the business decision, unit of work, consumption, useful work, outcome, value, evidence, and next action.
+Capture the work, consumption, Accepted Work, outcome, value, evidence, and next action.
 
 ### Preparing a presentation?
 → [Slide Library](slides/)
@@ -60,6 +81,34 @@ Examples demonstrate the approach; they do not define it.
 → [Validation and Field Learnings](validation/)
 
 Capture what worked, what was unclear, and what should change.
+
+---
+
+## How the methods fit together
+
+The field kit combines two complementary disciplines.
+
+### Token-to-Value
+
+**Token-to-Value is the measurement discipline.**
+
+It helps connect AI consumption to Accepted Work, business outcomes, and economic value while preserving the distinction between what is measured, attributed, modeled, and unknown.
+
+It answers questions such as:
+
+- What AI resources are being consumed?
+- What does that consumption cost?
+- How much Accepted Work is being produced?
+- What does one accepted unit of work cost?
+- What outcomes and value might that work support?
+
+### Value-to-Action
+
+**Value-to-Action is the broader decision discipline.**
+
+It begins with the work and business decision, incorporates measurement evidence, evaluates outcomes and economic value, tests the strength of the evidence, and determines what action is justified.
+
+Token-to-Value therefore **plugs into Value-to-Action** rather than handing off to it at a single stage.
 
 ---
 
@@ -94,17 +143,17 @@ The field kit provides:
 
 - a common AI Profitability point of view,
 - a repeatable partner conversation,
+- a measurement discipline for connecting consumption to Accepted Work,
 - scenario-specific translations of the common approach,
-- reusable field assets,
 - explicit treatment of evidence and uncertainty,
 - and a path from AI economics to an investment decision.
 
-The methodology stays consistent while each workload defines its own:
+The reasoning remains consistent while each workload defines its own:
 
 ```text
+work to be accomplished
 unit of work
-useful / accepted work
-verification
+acceptance criteria
 business outcome
 value mechanism
 relevant costs
@@ -136,12 +185,13 @@ Explicit allocation rule
 Attributed workload cost
 ```
 
-Therefore:
+And:
 
 ```text
-Modeled value ≠ realized value
+AI activity ≠ Accepted Work
+Accepted Work ≠ business outcome
 Observed outcome ≠ incremental outcome
-Useful AI work ≠ business value
+Modeled value ≠ realized value
 ```
 
 ---
