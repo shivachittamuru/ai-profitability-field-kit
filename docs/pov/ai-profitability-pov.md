@@ -301,7 +301,7 @@ Therefore:
 
 > **Standardize the reasoning and evidence discipline. Customize the workload and business semantics deliberately.**
 
-An SI helping a customer justify an AI transformation and an ISV evaluating an AI product feature can use the same reasoning without using the same metrics.
+An SI helping a customer justify an AI transformation and an SDC evaluating an AI product feature can use the same reasoning without using the same metrics.
 
 ---
 

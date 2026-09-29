@@ -60,7 +60,7 @@ Use a repeatable structure to move from the partner's business question to an ev
 ### Looking for your scenario?
 → [Scenario Profiles](docs/scenarios/)
 
-See how the approach translates across SI, services, SDC/ISV, agentic, software-development, optimization, and other scenarios.
+See how the approach translates across SDC & SI agentic, software-development, optimization, and other scenarios.
 
 ### Running a working session?
 → [AI Profitability Engagement Canvas](docs/canvas/engagement-canvas.md)
@@ -204,8 +204,8 @@ The field kit is intended for practitioners and partners involved in AI economic
 - AI architects and engineers
 - Application developers
 - FinOps practitioners
-- System Integrators / services partners
-- Software Development Companies / ISVs
+- System Integrators (SIs)
+- Software Development Companies (SDCs)
 - Technical and business leaders
 
 The questions may differ by audience. The underlying reasoning remains consistent.

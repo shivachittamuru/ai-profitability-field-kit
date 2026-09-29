@@ -618,7 +618,7 @@ The playbook stays constant.
 
 The economic interpretation changes.
 
-### SI / Services Partner
+### SI Partner
 
 Common question:
 
@@ -635,7 +635,7 @@ evidence plan
 customer investment decision
 ```
 
-### SDC / ISV
+### SDC Partner
 
 Common question:
 
