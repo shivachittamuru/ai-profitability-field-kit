@@ -270,4 +270,6 @@ The field kit is currently being developed and validated. Claims about broad app
 ## Contributors
 
 * Patrick Weikle
+* Bob Jacobs
+* Dale Kirby
 * Shiva Chittamuru
