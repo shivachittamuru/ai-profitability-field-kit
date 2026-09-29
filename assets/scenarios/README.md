@@ -42,7 +42,7 @@ Use the matrix below for a quick comparison, then open an individual scenario wh
 
 # Available Scenario Profiles
 
-## SI / Services
+## SI 
 
 - [Customer Support Agent](si-customer-support-agent.md)
 
@@ -50,7 +50,9 @@ More SI scenarios will be added as they are validated.
 
 ## SDC
 
-Scenario profiles coming next.
+- [Embedded AI Copilot](sdc-embedded-ai-copilot.md)
+
+More SDC scenarios will be added as they are validated.
 
 ---
 

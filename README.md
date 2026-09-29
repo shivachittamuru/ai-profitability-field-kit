@@ -264,3 +264,10 @@ Practitioners should eventually be able to:
 ## Working hypotheses
 
 The field kit is currently being developed and validated. Claims about broad applicability, practitioner adoption, partner impact, or improved investment decisions should be treated as hypotheses until supported by field evidence.
+
+---
+
+## Contributors
+
+* Patrick Weikle
+* Shiva Chittamuru
