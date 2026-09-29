@@ -48,22 +48,22 @@ AI activity becomes economically meaningful only when it produces work that is a
 ## Start here
 
 ### New to the approach?
-→ [AI Profitability POV](docs/pov/ai-profitability-pov.md)
+→ [AI Profitability POV](assets/pov/ai-profitability-pov.md)
 
 Understand the core perspective and principles.
 
 ### Running a partner conversation?
-→ [Partner Playbook](docs/playbook/partner-playbook.md)
+→ [Partner Playbook](assets/playbook/partner-playbook.md)
 
 Use a repeatable structure to move from the partner's business question to an evidence-backed next action.
 
 ### Looking for your scenario?
-→ [Scenario Profiles](docs/scenarios/)
+→ [Scenario Profiles](assets/scenarios/)
 
 See how the approach translates across SDC & SI agentic, software-development, optimization, and other scenarios.
 
 ### Running a working session?
-→ [AI Profitability Engagement Canvas](docs/canvas/engagement-canvas.md)
+→ [AI Profitability Engagement Canvas](assets/canvas/engagement-canvas.md)
 
 Capture the work, consumption, Accepted Work, outcome, value, evidence, and next action.
 
@@ -218,7 +218,7 @@ The questions may differ by audience. The underlying reasoning remains consisten
 ai-profitability-field-kit/
 │
 ├── README.md
-├── docs/
+├── assets/
 │   ├── pov/
 │   ├── playbook/
 │   ├── scenarios/
