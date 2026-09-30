@@ -45,12 +45,14 @@ Use the matrix below for a quick comparison, then open an individual scenario wh
 ## SI 
 
 - [Customer Support Agent](si-customer-support-agent.md)
+- [AI-assisted Software Modernization](si-software-modernization.md)
 
 More SI scenarios will be added as they are validated.
 
 ## SDC
 
 - [Embedded AI Copilot](sdc-embedded-ai-copilot.md)
+- [Domain-Specific Agentic Workflow](sdc-domain-specific-agents.md)
 
 More SDC scenarios will be added as they are validated.
 
