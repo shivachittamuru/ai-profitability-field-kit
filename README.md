@@ -2,7 +2,7 @@
 
 AI adoption increasingly raises a practical business question:
 
-> **Can we demonstrate that the economic value created by AI justifies the resources invested in it?**
+> **Can we determine whether AI investment is producing enough verified business value to justify what we consume and what we invest next?**
 
 The AI Profitability Field Kit helps Microsoft practitioners and partners connect AI investment to **Accepted Work, business outcomes, economic value, evidence, and action**.
 
@@ -43,6 +43,8 @@ What should we do next?
 
 AI activity becomes economically meaningful only when it produces work that is actually acceptable for its intended purpose.
 
+This five-question flow is the simplified field conversation. Underneath it is a more complete operating model: the **AI Value Loop**.
+
 ---
 
 ## Start here
@@ -63,19 +65,13 @@ Use a repeatable structure to move from the partner's business question to an ev
 See how the approach translates across SDC & SI agentic, software-development, optimization, and other scenarios.
 
 ### Running a working session?
-→ [AI Profitability Engagement Canvas](assets/canvas/engagement-canvas.md)
-
-Capture the work, consumption, Accepted Work, outcome, value, evidence, and next action.
+→ **Engagement Canvas — Coming next**
 
 ### Preparing a presentation?
-→ [Slide Library](slides/)
-
-Select reusable modules for different audiences and conversations.
+→ **Slide Library — In development**
 
 ### Looking for worked examples?
-→ [Reference Examples](examples/)
-
-Examples demonstrate the approach; they do not define it.
+→ **Reference Examples — Planned**
 
 ### Have feedback or a field learning?
 → [Validation and Field Learnings](validation/)
@@ -84,31 +80,52 @@ Capture what worked, what was unclear, and what should change.
 
 ---
 
-## How the methods fit together
+## The AI Value Loop
 
-The field kit combines two complementary disciplines.
+The field kit is built around one end-to-end AI profitability model:
 
-### Token-to-Value
+```text
+                    AI VALUE LOOP
 
-**Token-to-Value is the measurement discipline.**
+     FRAME → MEASURE → VERIFY → BUSINESS OUTCOME
+       │        │         │            │
+   What job? AI spend  Useful work   What changed?
+                         │
+                         ▼
+                   ECONOMIC VALUE
+                         │
+                  Was it worth it?
+                         ▼
+      TEST → DECIDE → ALLOCATE → PROTECT
+       │        │         │          │
+ Believe it? Act how?  Next $?   Dependency?
+       │                              │
+       └──────────→ REASSESS ←────────┘
+                  What changed?
+```
 
-It helps connect AI consumption to Accepted Work, business outcomes, and economic value while preserving the distinction between what is measured, attributed, modeled, and unknown.
+The loop helps practitioners move from:
 
-It answers questions such as:
+- defining the work,
+- to understanding AI consumption,
+- to verifying useful work,
+- to observing business outcomes,
+- to estimating economic value,
+- to testing the strength of the evidence,
+- to deciding what to do next,
+- to allocating the next investment,
+- to protecting dependencies and constraints,
+- and reassessing as conditions change.
 
-- What AI resources are being consumed?
-- What does that consumption cost?
-- How much Accepted Work is being produced?
-- What does one accepted unit of work cost?
-- What outcomes and value might that work support?
+For partner conversations, the same reasoning is simplified to:
 
-### Value-to-Action
+```text
+WORK → MEASURE → OUTCOME → VALUE → ACTION
+```
 
-**Value-to-Action is the broader decision discipline.**
+The simplified flow is easier to use in the field without losing the evidence discipline underneath it.
 
-It begins with the work and business decision, incorporates measurement evidence, evaluates outcomes and economic value, tests the strength of the evidence, and determines what action is justified.
-
-Token-to-Value therefore **plugs into Value-to-Action** rather than handing off to it at a single stage.
+The AI Value Loop builds on earlier **Token-to-Value** measurement work and **Value-to-Action** decision research. Those ideas are now unified here as one operating model rather than presented as separate field frameworks.
 
 ---
 
@@ -228,6 +245,8 @@ ai-profitability-field-kit/
 ├── examples/
 └── validation/
 ```
+
+Some of these directories represent planned or in-development assets as noted above.
 
 ---
 

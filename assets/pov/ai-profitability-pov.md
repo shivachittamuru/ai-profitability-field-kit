@@ -25,7 +25,7 @@ Only then should we ask what AI resources are required, whether those resources 
 
 ## Our point of view
 
-> **AI profitability is the ability to convert investment in AI into Accepted Work and economically valuable outcomes with enough evidence to support an investment decision.**
+> **AI profitability is the discipline of converting AI investment into verified work, meaningful business outcomes, and economic value with enough evidence to support the next investment decision.**
 
 **Accepted Work** is work that meets the acceptance criteria required for the job being performed.
 
@@ -45,9 +45,99 @@ The objective is therefore not simply to minimize AI cost.
 
 ---
 
-# Five questions for AI Profitability
+# The AI Value Loop
 
-For broad organizational use, AI Profitability can be framed through five questions.
+AI Profitability is best treated as one continuous operating model rather than separate measurement and decision frameworks.
+
+```text
+                    AI VALUE LOOP
+
+     FRAME → MEASURE → VERIFY → BUSINESS OUTCOME
+       │        │         │            │
+   What job? AI spend  Useful work   What changed?
+                         │
+                         ▼
+                   ECONOMIC VALUE
+                         │
+                  Was it worth it?
+                         ▼
+      TEST → DECIDE → ALLOCATE → PROTECT
+       │        │         │          │
+ Believe it? Act how?  Next $?   Dependency?
+       │                              │
+       └──────────→ REASSESS ←────────┘
+                  What changed?
+```
+
+The stages answer different questions:
+
+### FRAME
+> **What job are we trying to accomplish?**
+
+Define the work, the unit of work, what success means, and the business decision being considered.
+
+### MEASURE
+> **What resources are we consuming?**
+
+Measure AI usage, infrastructure, supporting services, human effort, retries, rework, and other economically relevant inputs.
+
+### VERIFY
+> **Did that activity produce useful, acceptable work?**
+
+Apply the acceptance criteria required for the job.
+
+This is where AI activity becomes **Accepted Work**.
+
+### BUSINESS OUTCOME
+> **What changed?**
+
+Determine whether Accepted Work changed something meaningful in the business, product, workflow, or customer experience.
+
+### ECONOMIC VALUE
+> **What was that change worth?**
+
+Translate the outcome into an economic mechanism while preserving the distinction between modeled, observed, incremental, and realized value.
+
+### TEST
+> **How much should we believe the economics?**
+
+Examine evidence quality, assumptions, counterfactuals, uncertainty, and value resilience.
+
+### DECIDE
+> **What action is justified?**
+
+Use the available evidence to determine what decision is supportable now.
+
+### ALLOCATE
+> **Where should the next dollar or unit of effort go?**
+
+Evaluate next-dollar economics rather than assuming that historical value automatically justifies additional investment.
+
+### PROTECT
+> **What dependencies, controls, risks, or constraints could change the economics?**
+
+Account for material technical, operational, commercial, governance, and adoption dependencies.
+
+### REASSESS
+> **What changed?**
+
+Revisit the economics as usage, architecture, pricing, evidence, outcomes, or business conditions change.
+
+The loop is continuous because AI profitability is not a one-time ROI calculation.
+
+---
+
+# Five questions for field conversations
+
+The full AI Value Loop provides the operating model.
+
+For broad organizational use and partner conversations, it can be simplified into five questions:
+
+```text
+WORK → MEASURE → OUTCOME → VALUE → ACTION
+```
+
+This simplified flow preserves the same reasoning while making the conversation easier to run.
 
 ## 1. WORK
 
@@ -96,7 +186,7 @@ AI Resources
       ↓
 AI Activity
       ↓
-Acceptance Criteria
+Verification / Acceptance Criteria
       ↓
 Accepted Work
 ```
@@ -208,65 +298,32 @@ Every action should also establish what needs to be reassessed next.
 
 ---
 
-# How Token-to-Value fits
+# One framework, different levels of detail
 
-Token-to-Value should not be treated as a separate framework that ends where Value-to-Action begins.
-
-Instead:
-
-> **Token-to-Value is the measurement discipline that helps Value-to-Action reason correctly about AI consumption, Accepted Work, outcomes, and economics.**
-
-It contributes evidence such as:
+The relationship between the field conversation and the full operating model is:
 
 ```text
-AI consumption
-cost
-Accepted Work
-cost per Accepted Work
-execution efficiency
-outcome evidence
-economic estimates
+FIELD CONVERSATION            AI VALUE LOOP
+
+WORK                       →  FRAME
+
+MEASURE                    →  MEASURE + VERIFY
+
+OUTCOME                    →  BUSINESS OUTCOME
+
+VALUE                      →  ECONOMIC VALUE + TEST
+
+ACTION                     →  DECIDE + ALLOCATE
+                              + PROTECT + REASSESS
 ```
 
-Its central question is:
+Practitioners do not need to introduce every stage in every conversation.
 
-> **What are we getting for the AI resources we consume?**
+The field conversation provides the simple entry point.
 
-That measurement evidence then becomes one input into the broader decision process.
+The AI Value Loop provides the rigor underneath it when deeper analysis is required.
 
----
-
-# How Value-to-Action fits
-
-Value-to-Action provides the broader decision discipline.
-
-It starts with the work and intended outcome, incorporates measurement evidence, evaluates economic value and evidence quality, and determines what action is justified.
-
-Conceptually:
-
-```text
-WORK
-  ↓
-FRAME / MEASURE
-  ↓
-Accepted Work
-  ↓
-OUTCOME
-  ↓
-VALUE
-  ↓
-TEST
-  ↓
-DECIDE
-  ↓
-ACT
-  ↓
-REASSESS
-```
-
-Token-to-Value strengthens the measurement and economics within this flow.
-
-Value-to-Action governs how the evidence becomes a decision.
+The model builds on earlier **Token-to-Value** measurement work and **Value-to-Action** decision research. Those ideas are now unified into the AI Value Loop rather than presented as separate field frameworks.
 
 ---
 
