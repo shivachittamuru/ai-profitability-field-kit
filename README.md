@@ -180,36 +180,25 @@ decision criteria
 
 ---
 
-## Evidence discipline
+## How this relates to FinOps
 
-The field kit keeps important evidence boundaries visible:
+FinOps and AI Profitability are complementary.
 
-- **Measured** — directly measured evidence
-- **Observed** — activity or outcomes actually observed
-- **Allocated** — measured cost distributed using an explicit rule
-- **Modeled** — estimated using assumptions
-- **Incremental** — change supported relative to a baseline or counterfactual
-- **Realized** — economic value sufficiently supported by observed evidence
-- **Unknown** — evidence is not currently available
+**FinOps** provides the cost-evidence foundation: what resources are consumed, what they cost, how costs are allocated, and where they can be optimized.
 
-For example:
+**AI Profitability** connects that evidence to **Accepted Work, business outcomes, economic value, and investment action**.
 
 ```text
-Observed resource use
+FinOps cost evidence
         +
-Explicit allocation rule
-        =
-Attributed workload cost
+AI workload and business evidence
+        ↓
+AI Profitability
 ```
 
-And:
+> **FinOps optimizes what we spend. AI Profitability determines whether that spending produces enough verified value—and what to do next.**
 
-```text
-AI activity ≠ Accepted Work
-Accepted Work ≠ business outcome
-Observed outcome ≠ incremental outcome
-Modeled value ≠ realized value
-```
+For the detailed comparison, cost-granularity considerations, and how FinOps fits into the AI Value Loop, see [FinOps and AI Profitability](assets/guidance/finops-and-ai-profitability.md).
 
 ---
 
@@ -226,43 +215,6 @@ The field kit is intended for practitioners and partners involved in AI economic
 - Technical and business leaders
 
 The questions may differ by audience. The underlying reasoning remains consistent.
-
----
-
-## Repository structure
-
-```text
-ai-profitability-field-kit/
-│
-├── README.md
-├── assets/
-│   ├── pov/
-│   ├── playbook/
-│   ├── scenarios/
-│   ├── canvas/
-│   └── facilitator/
-├── slides/
-├── examples/
-└── validation/
-```
-
-Some of these directories represent planned or in-development assets as noted above.
-
----
-
-## Current maturity
-
-**Status: V0.1 — internal draft**
-
-Initial work focuses on:
-
-1. AI Profitability POV
-2. Partner Playbook
-3. SI / SDC scenario translations
-4. Engagement Canvas
-5. Modular field assets
-
-The field kit will be refined through internal enablement and selective partner application.
 
 ---
 
