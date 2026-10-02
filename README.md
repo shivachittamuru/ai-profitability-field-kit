@@ -65,7 +65,10 @@ Use a repeatable structure to move from the partner's business question to an ev
 See how the approach translates across SDC & SI agentic, software-development, optimization, and other scenarios.
 
 ### Running a working session?
-→ **Engagement Canvas — Coming next**
+→ [Engagement Canvas](assets/canvas/engagement-canvas.md)
+
+Capture the business outcomes, economic logic, evidence, and next action for a specific AI workload.
+The playbook tells you how to think and facilitate; the canvas records what you learned and decided.
 
 ### Preparing a presentation?
 → **Slide Library — In development**

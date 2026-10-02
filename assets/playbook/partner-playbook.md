@@ -15,7 +15,20 @@ Use it when the conversation sounds like:
 
 The objective is **not** to prove that AI is profitable.
 
-The objective is to help the partner reach an evidence-backed next action.
+The objective is to help the partner reach an **evidence-backed next action**.
+
+Use the supporting assets for different purposes:
+
+```text
+Partner Playbook
+→ how to reason through and facilitate the conversation
+
+Scenario TEMPLATE.md
+→ how the method translates to a specific partner or workload
+
+Engagement Canvas
+→ what to capture and leave behind from the engagement
+```
 
 ---
 
@@ -50,53 +63,25 @@ What should we do next?
 
 Do not force every engagement through the same metrics.
 
-Standardize the questions. Adapt the answers to the workload and business model.
+> **Standardize the questions. Adapt the answers to the workload and business model.**
 
 ---
 
 # Before the conversation
 
-You do not need complete economics before starting.
+Try to establish four things before going deep:
 
-Try to understand four things:
+1. **Why now?**  
+   Rising cost, new investment, pilot-to-production, architecture choice, margin concern, ROI question, or another trigger.
 
-1. **Why the conversation is happening now**
+2. **Who owns the decision?**  
+   Engineering, product, FinOps, business leadership, customer, or multiple stakeholders.
 
-   - rising cost,
-   - new AI investment,
-   - pilot-to-production decision,
-   - architecture choice,
-   - margin concern,
-   - customer ROI question,
-   - or another decision.
+3. **What evidence already exists?**  
+   Cost, runtime telemetry, evaluations, workload metrics, business KPIs, financial assumptions.
 
-2. **Who owns the decision**
-
-   - engineering,
-   - product,
-   - FinOps,
-   - business leadership,
-   - customer,
-   - or multiple stakeholders.
-
-3. **What evidence already exists**
-
-   - cloud cost,
-   - runtime telemetry,
-   - evaluations,
-   - workload metrics,
-   - business KPIs,
-   - financial assumptions.
-
-4. **What decision needs to be made**
-
-   - prove,
-   - optimize,
-   - scale,
-   - sustain,
-   - restructure,
-   - pause,
-   - or retire.
+4. **What decision needs to be made?**  
+   Prove, optimize, scale, sustain, restructure, pause, or retire.
 
 Start with the decision—not a product demonstration.
 
@@ -106,12 +91,11 @@ Start with the decision—not a product demonstration.
 
 > **What work are we trying to accomplish?**
 
-The goal is to define the job before discussing AI consumption.
+Define the job before discussing AI consumption.
 
 ## Ask
 
 - What business or customer problem are we solving?
-- What work is being performed today?
 - What is the meaningful unit of work?
 - What does successful completion look like?
 - What makes the work acceptable?
@@ -129,21 +113,11 @@ one successful customer task
 one generated design accepted for use
 ```
 
-## Capture
-
-```text
-Work to be accomplished:
-Unit of work:
-Current baseline:
-Acceptance criteria:
-Decision being considered:
-```
-
 ## Watch for
 
 ### Starting with the technology
 
-Avoid:
+Avoid beginning with:
 
 > “We are using GPT-X with retrieval and three agents.”
 
@@ -151,17 +125,17 @@ Redirect toward:
 
 > “What work is that system supposed to accomplish?”
 
-### Counting output as success
+### Counting activity as success
 
-Generated output is not automatically Accepted Work.
+Generated output is not automatically **Accepted Work**.
 
-Define the acceptance criteria first.
+Accepted Work means the AI-assisted work satisfies the acceptance criteria required for the job being performed.
 
 ## Exit condition
 
-You should be able to complete this sentence:
+You should be able to complete:
 
-> **One successful unit of work is \_\_\_\_\_\_\_\_, and we accept it when \_\_\_\_\_\_\_\_.**
+> **One successful unit of work is ________, and we accept it when ________.**
 
 If you cannot, do not move into detailed unit economics yet.
 
@@ -171,56 +145,36 @@ If you cannot, do not move into detailed unit economics yet.
 
 > **What did the work consume, and how much Accepted Work did it produce?**
 
-This is where Token-to-Value provides the measurement discipline.
+Measure the complete relevant system—not only model usage.
 
-## Ask
-
-### Consumption
-
-- What AI resources are consumed?
-- What supporting cloud services are involved?
-- What human effort is required?
-- What retry, rework, or failure activity exists?
-- Which costs are dedicated versus shared?
-
-Relevant signals might include:
+Relevant evidence may include:
 
 ```text
-tokens
-model calls
-tool calls
-retrieval
-compute
-cloud infrastructure
-latency
-retries
-human review
-human rework
+tokens / model calls
+tools / retrieval
+compute / cloud infrastructure
+latency / retries
+human review / rework
+other economically material services
 ```
-
-### Accepted Work
-
-- How many work attempts occurred?
-- How many met the acceptance criteria?
-- How is acceptance verified?
-- What failures still consumed resources?
-- Is quality consistent enough for economic comparison?
 
 ## Useful measures
 
 Depending on the workload:
 
 ```text
-Total relevant cost
-
 Accepted Work rate
 =
 Accepted units / attempted units
+```
 
+```text
 Cost per Accepted Work
 =
 Relevant cost / Accepted units
+```
 
+```text
 AI work waste
 =
 Resource-consuming activity that did not produce Accepted Work
@@ -228,25 +182,25 @@ Resource-consuming activity that did not produce Accepted Work
 
 These are patterns, not mandatory universal KPIs.
 
-## Preserve cost provenance
+## Preserve evidence provenance
 
-Always distinguish:
+Keep important evidence types separate:
 
 ```text
 MEASURED
-Direct billing / usage evidence
+Direct measurement or billing evidence
 
 OBSERVED
-Runtime activity actually observed
+Activity or outcomes actually observed
 
 ALLOCATED
-Shared measured cost assigned using an explicit rule
+Measured cost assigned using an explicit rule
 
 MODELED
-Cost estimated from pricing or assumptions
+Estimated using assumptions
 
 UNKNOWN
-Not currently available
+Evidence not currently available
 ```
 
 For example:
@@ -261,14 +215,14 @@ explicit allocation rule
 attributed workload Search cost
 ```
 
-Do not describe the result as measured per-request cost if Azure did not bill it at that grain.
+Do not describe allocated cost as directly measured at a finer grain than the underlying evidence supports.
 
 ## Watch for
 
 - optimizing tokens before defining Accepted Work,
 - comparing systems only on cost per interaction,
-- excluding failed work from the denominator,
-- treating allocated cost as directly measured cost,
+- excluding failed work from the economics,
+- treating allocated cost as directly measured,
 - ignoring human review or rework where economically material.
 
 ## Exit condition
@@ -283,17 +237,16 @@ You should understand:
 
 > **What changed because Accepted Work occurred?**
 
-Accepted Work proves that the AI performed the intended work.
+Accepted Work proves that the intended work was completed.
 
 It does not yet prove business value.
 
 ## Ask
 
 - What downstream outcome should this work influence?
-- Is that outcome currently measured?
-- Where does the evidence live?
+- Is that outcome measured?
 - What baseline are we comparing against?
-- How long after the AI work should the outcome occur?
+- Where does the evidence live?
 - Could something else explain the change?
 
 Examples:
@@ -309,47 +262,26 @@ defect avoided
 customer task completed
 ```
 
-## Classify the evidence
-
-### Modeled outcome
-
-Expected based on assumptions.
-
-### Observed outcome
-
-Actually occurred after the AI work.
-
-### Incremental outcome
-
-Evidence supports that the AI changed the outcome relative to an appropriate baseline or counterfactual.
-
-Keep these separate.
+Keep these distinctions explicit:
 
 ```text
 Accepted Work
-≠ observed outcome
+≠ business outcome
 
 Observed outcome
 ≠ incremental outcome
 ```
 
-## When business evidence is missing
+### Modeled outcome
+Expected based on assumptions.
 
-Do not invent a value.
+### Observed outcome
+Actually occurred.
 
-Record:
+### Incremental outcome
+Evidence supports that the AI changed the outcome relative to an appropriate baseline or counterfactual.
 
-```text
-Outcome evidence: UNKNOWN
-```
-
-Then turn the gap into a measurement plan:
-
-- what event must be captured,
-- from which system,
-- with what identifier,
-- over what period,
-- against what baseline.
+If the evidence is missing, record it as **Unknown** and turn the gap into a measurement plan.
 
 ## Exit condition
 
@@ -359,9 +291,7 @@ You should know either:
 
 or:
 
-> **exactly what evidence is missing to determine whether it changed.**
-
-Both are useful outcomes from the conversation.
+> **what evidence is still needed to determine whether it changed.**
 
 ---
 
@@ -369,30 +299,31 @@ Both are useful outcomes from the conversation.
 
 > **What was the change worth, and how credible is the claim?**
 
-Only value the outcome after defining the work and outcome.
+Value the outcome only after defining the work and outcome.
 
-## Ask
+Potential mechanisms include:
 
-- How does the outcome create economic benefit?
-- Is the benefit revenue, contribution, cost avoided, capacity, margin, risk, or something else?
-- What additional costs are required to produce it?
-- Is the value modeled, observed, incremental, or realized?
-- What assumptions drive the conclusion?
-- How easily does the economic case break?
+```text
+revenue gained
+cost avoided
+capacity released
+margin improved
+risk reduced
+cycle time shortened
+customer value created
+```
 
-## Basic reasoning
-
-Depending on the use case:
+Basic reasoning may look like:
 
 ```text
 Economic benefit
 -
-Relevant customer cost
+Relevant cost
 =
 Net Economic Value
 ```
 
-For an expansion decision:
+For expansion decisions:
 
 ```text
 Additional expected value
@@ -402,38 +333,19 @@ Additional required cost
 Incremental / next-dollar economics
 ```
 
-Avoid relying only on historical average economics when the decision is about additional investment.
-
 ## Test two different things
 
 ### Evidence confidence
 
-> How strongly is the value claim supported?
+> **How strongly is the value claim supported?**
 
-Consider:
-
-- measurement quality,
-- baseline quality,
-- attribution,
-- completeness of costs,
-- observed versus modeled inputs.
+Consider measurement quality, baseline quality, attribution, completeness of cost, and observed versus modeled inputs.
 
 ### Value resilience
 
-> How sensitive is the conclusion to assumptions?
+> **How sensitive is the conclusion to assumptions?**
 
-Test important assumptions such as:
-
-- workload volume,
-- success rate,
-- conversion,
-- labor value,
-- margins,
-- AI cost,
-- human review,
-- model choice.
-
-These are different questions.
+Test the assumptions most capable of changing the decision.
 
 A resilient model is not necessarily well proven.
 
@@ -441,22 +353,22 @@ Strong evidence does not necessarily mean attractive economics.
 
 ## Watch for
 
-- modeled ROI presented as realized ROI,
+- modeled ROI presented as realized value,
 - revenue presented without relevant costs,
-- productivity translated directly into dollars without a mechanism,
+- productivity translated directly into dollars without a realization mechanism,
 - sensitivity analysis presented as causal evidence,
-- ignoring next-dollar economics.
+- historical average economics used when the decision concerns the next dollar.
 
 ## Exit condition
 
-You should be able to state:
+You should understand:
 
 ```text
-What value we can support:
-What value is still modeled:
-What assumptions matter most:
-What remains unknown:
-How resilient the conclusion appears:
+What value is supported
+What remains modeled
+Which assumptions matter most
+What remains unknown
+How resilient the conclusion is
 ```
 
 ---
@@ -465,37 +377,33 @@ How resilient the conclusion appears:
 
 > **What should we do next?**
 
-Do not end the conversation with a dashboard or ROI number.
+Do not end with a dashboard or ROI number.
 
 End with a decision.
 
 Possible actions:
 
 ```text
+PROVE
+OPTIMIZE
+RESTRUCTURE
 SCALE
 SUSTAIN
-OPTIMIZE
-PROVE
-RESTRUCTURE
 PAUSE
 RETIRE
 ```
 
-Use the primary constraint to guide the action.
-
-| What the evidence suggests                               | Likely next action |
-| -------------------------------------------------------- | ------------------ |
-| Promising economics, weak business evidence              | **PROVE**          |
-| Valuable work, inefficient execution                     | **OPTIMIZE**       |
-| Economics depend on a flawed architecture/business model | **RESTRUCTURE**    |
-| Strong evidence and attractive next-dollar economics     | **SCALE**          |
-| Healthy economics, no immediate expansion need           | **SUSTAIN**        |
-| Material unresolved risk or temporary constraint         | **PAUSE**          |
-| Evidence indicates the investment is no longer justified | **RETIRE**         |
+| What the evidence suggests | Likely next action |
+|---|---|
+| Promising economics, weak business evidence | **PROVE** |
+| Valuable work, inefficient execution | **OPTIMIZE** |
+| Architecture or business model prevents sustainable economics | **RESTRUCTURE** |
+| Strong evidence and attractive next-dollar economics | **SCALE** |
+| Healthy economics, no immediate expansion need | **SUSTAIN** |
+| Material unresolved risk or temporary constraint | **PAUSE** |
+| Investment is no longer justified | **RETIRE** |
 
 These are decision patterns, not automatic rules.
-
-Context and mandatory business or technical controls still apply.
 
 ## Every action needs a reassessment trigger
 
@@ -509,58 +417,21 @@ Optimize
 → reassess after architecture change
 
 Prove
-→ reassess when pilot outcome evidence is available
+→ reassess when outcome evidence is available
 
 Restructure
-→ reassess after new operating model is tested
+→ reassess after the new operating model is tested
 ```
 
-This turns AI Profitability into an operating loop rather than a one-time ROI exercise.
+That turns AI Profitability into an operating loop rather than a one-time ROI exercise.
 
----
-
-# The conversation should produce one page
-
-A successful engagement does not need a large report.
-
-At minimum, leave with:
-
-```text
-AI PROFITABILITY SNAPSHOT
-
-WORK
-What are we trying to accomplish?
-
-ACCEPTED WORK
-What counts as successfully completed work?
-
-COST / CONSUMPTION
-What do we know, allocate, model, or not know?
-
-OUTCOME
-What changed?
-
-VALUE
-What can we reasonably claim?
-
-EVIDENCE
-What is measured / observed / allocated /
-modeled / incremental / realized / unknown?
-
-ACTION
-What should happen next?
-
-REASSESS
-What evidence or event changes the decision?
-```
-
-This becomes the input to the Engagement Canvas.
+Record the engagement output, evidence gaps, owners, and reassessment trigger in the **Engagement Canvas**.
 
 ---
 
 # Different entry points are okay
 
-Partners may enter the conversation at different places.
+The five questions provide structure without requiring every conversation to begin in the same place.
 
 ### “Our AI bill is too high.”
 
@@ -608,8 +479,6 @@ business outcome
 
 not cost alone.
 
-The five questions provide structure without requiring every conversation to begin at the same point.
-
 ---
 
 # Partner-type translation
@@ -618,78 +487,49 @@ The playbook stays constant.
 
 The economic interpretation changes.
 
-### SI Partner
+### SI
 
-Common question:
+Typical lens:
 
-> How do we help the customer prove and improve the economics of an AI investment?
+> **How do we help the customer prove and improve the economics of an AI investment?**
 
-Typical emphasis:
+### SDC
 
-```text
-customer baseline
-delivery economics
-business outcomes
-architecture optimization
-evidence plan
-customer investment decision
-```
+Typical lens:
 
-### SDC Partner
+> **Can we deliver this AI capability with sustainable provider economics and meaningful customer value?**
 
-Common question:
+Do not create separate methodologies for each partner type.
 
-> Can we deliver this AI capability with sustainable product economics and meaningful customer value?
-
-Typical emphasis:
-
-```text
-cost per Accepted Work
-feature / customer economics
-gross-margin impact
-model and architecture choices
-pricing / packaging
-usage growth
-next-dollar product investment
-```
-
-Detailed translations belong in the Scenario Profiles rather than this playbook.
+Use the **Scenario Profiles** and `scenarios/TEMPLATE.md` to translate the common method into the specific unit of work, acceptance criteria, cost boundary, business outcome, value mechanism, and decision context.
 
 ---
 
 # Common conversation traps
 
-Avoid these shortcuts:
+Avoid shortcuts such as:
 
 ```text
 “Tokens went down, therefore economics improved.”
 
 “Quality scores are high, therefore the project has ROI.”
 
-“The business KPI improved after launch, therefore AI caused it.”
+“The KPI improved after launch, therefore AI caused it.”
 
 “The model shows 5× value, therefore we should scale.”
-
-“We cannot measure it yet, therefore the value is zero.”
 
 “The service costs $X per month, therefore each request costs $X/N.”
 ```
 
-Replace them with:
+Instead ask:
 
 ```text
 What work improved?
-
 How much Accepted Work resulted?
-
 What changed downstream?
-
 What evidence supports attribution?
-
 Which costs are measured versus allocated?
-
 What remains modeled or unknown?
-
 What decision does the evidence support today?
 ```
 
@@ -699,9 +539,7 @@ What decision does the evidence support today?
 
 Do not begin with products.
 
-Begin with the economic problem.
-
-Then map the evidence gaps to capabilities.
+Begin with the economic problem, then map evidence gaps to capabilities.
 
 Examples:
 
@@ -727,28 +565,33 @@ The platform supports the profitability motion; it does not define it.
 
 A strong close sounds like:
 
-> **“Based on what we know today, the primary constraint is \_\_\_\_\_\_\_\_. The evidence supports \_\_\_\_\_\_\_\_ as the next action. Before the next investment decision, we need to learn \_\_\_\_\_\_\_\_.”**
+> **“Based on what we know today, the primary constraint is ________. The evidence supports ________ as the next action. Before the next investment decision, we need to learn ________.”**
 
-That is more useful than ending with a generic ROI estimate.
+Then capture the agreed result in the **Engagement Canvas**:
+
+- decision,
+- evidence supporting it,
+- evidence gaps,
+- owner,
+- next action,
+- reassessment trigger.
 
 ---
 
-# Practitioner checklist
+# Practitioner check
 
-Before considering the conversation complete, confirm:
+Before considering the conversation complete, confirm that:
 
 - [ ] We started with the work, not the AI.
-- [ ] The unit of work is clear.
-- [ ] Accepted Work has explicit criteria.
-- [ ] Relevant costs are identified.
+- [ ] The unit of work is clear and Accepted Work has explicit criteria.
+- [ ] Relevant costs are identified and have defensible provenance.
 - [ ] Measured, allocated, modeled, and unknown costs are distinguished.
 - [ ] A downstream business outcome is defined.
 - [ ] Observed and incremental outcomes are not conflated.
-- [ ] Value claims show their evidence status.
-- [ ] Important assumptions and resilience are understood.
+- [ ] Value claims show their evidence status and expose assumptions.
 - [ ] A specific next action is identified.
 - [ ] A reassessment trigger or evidence gap is captured.
 
-If several of these are missing, that is not failure.
+If something is missing, that is useful information.
 
 It tells you what needs to be proven next.
