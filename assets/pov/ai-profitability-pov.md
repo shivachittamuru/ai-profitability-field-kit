@@ -2,7 +2,7 @@
 
 ## The problem
 
-AI economics conversations often begin with AI consumption:
+AI economics conversations often begin with consumption:
 
 ```text
 tokens
@@ -13,13 +13,13 @@ latency
 cloud cost
 ```
 
-Those measures matter, but they start too late in the reasoning.
+Those measures matter, but they start too late.
 
 The first question should be:
 
 > **What work are we trying to accomplish?**
 
-Only then should we ask what AI resources are required, whether those resources produce acceptable work, whether that work changes a business outcome, and whether the resulting economics justify further investment.
+Only then should we ask what AI resources are required, whether they produce acceptable work, whether that work changes a business outcome, and whether the economics justify further investment.
 
 ---
 
@@ -29,7 +29,7 @@ Only then should we ask what AI resources are required, whether those resources 
 
 **Accepted Work** is work that meets the acceptance criteria required for the job being performed.
 
-This distinction matters because:
+Keep these distinctions explicit:
 
 ```text
 AI activity ≠ Accepted Work
@@ -39,15 +39,15 @@ Modeled value ≠ realized value
 Lower cost ≠ better economics
 ```
 
-The objective is therefore not simply to minimize AI cost.
+The goal is not simply to minimize AI cost.
 
-> **The objective is to improve economically valuable outcomes per dollar while preserving the required quality, reliability, and controls.**
+> **The goal is to improve economically valuable outcomes per dollar while preserving required quality, reliability, and controls.**
 
 ---
 
 # The AI Value Loop
 
-AI Profitability is best treated as one continuous operating model rather than separate measurement and decision frameworks.
+AI Profitability is one continuous operating model:
 
 ```text
                     AI VALUE LOOP
@@ -69,59 +69,16 @@ AI Profitability is best treated as one continuous operating model rather than s
                   What changed?
 ```
 
-The stages answer different questions:
-
-### FRAME
-> **What job are we trying to accomplish?**
-
-Define the work, the unit of work, what success means, and the business decision being considered.
-
-### MEASURE
-> **What resources are we consuming?**
-
-Measure AI usage, infrastructure, supporting services, human effort, retries, rework, and other economically relevant inputs.
-
-### VERIFY
-> **Did that activity produce useful, acceptable work?**
-
-Apply the acceptance criteria required for the job.
-
-This is where AI activity becomes **Accepted Work**.
-
-### BUSINESS OUTCOME
-> **What changed?**
-
-Determine whether Accepted Work changed something meaningful in the business, product, workflow, or customer experience.
-
-### ECONOMIC VALUE
-> **What was that change worth?**
-
-Translate the outcome into an economic mechanism while preserving the distinction between modeled, observed, incremental, and realized value.
-
-### TEST
-> **How much should we believe the economics?**
-
-Examine evidence quality, assumptions, counterfactuals, uncertainty, and value resilience.
-
-### DECIDE
-> **What action is justified?**
-
-Use the available evidence to determine what decision is supportable now.
-
-### ALLOCATE
-> **Where should the next dollar or unit of effort go?**
-
-Evaluate next-dollar economics rather than assuming that historical value automatically justifies additional investment.
-
-### PROTECT
-> **What dependencies, controls, risks, or constraints could change the economics?**
-
-Account for material technical, operational, commercial, governance, and adoption dependencies.
-
-### REASSESS
-> **What changed?**
-
-Revisit the economics as usage, architecture, pricing, evidence, outcomes, or business conditions change.
+- **FRAME** — What job are we trying to accomplish?
+- **MEASURE** — What resources are we consuming?
+- **VERIFY** — Did that activity produce acceptable work?
+- **BUSINESS OUTCOME** — What changed?
+- **ECONOMIC VALUE** — What was that change worth?
+- **TEST** — How strong is the evidence and how resilient are the economics?
+- **DECIDE** — What action is justified?
+- **ALLOCATE** — Where should the next dollar or unit of effort go?
+- **PROTECT** — What risks, dependencies, or constraints could change the economics?
+- **REASSESS** — What changed?
 
 The loop is continuous because AI profitability is not a one-time ROI calculation.
 
@@ -129,15 +86,11 @@ The loop is continuous because AI profitability is not a one-time ROI calculatio
 
 # Five questions for field conversations
 
-The full AI Value Loop provides the operating model.
-
-For broad organizational use and partner conversations, it can be simplified into five questions:
+For broad organizational use, simplify the loop to:
 
 ```text
 WORK → MEASURE → OUTCOME → VALUE → ACTION
 ```
-
-This simplified flow preserves the same reasoning while making the conversation easier to run.
 
 ## 1. WORK
 
@@ -145,17 +98,9 @@ This simplified flow preserves the same reasoning while making the conversation 
 
 Start with the job, workflow, customer need, or business decision—not the AI.
 
-Define:
+Define the meaningful unit of work, what success means, and what makes the work acceptable.
 
-- what success means,
-- the relevant unit of work,
-- and the criteria that make the work acceptable.
-
-Examples might include resolving a case, completing an engineering task, processing a document, assisting a customer, or completing a workflow.
-
-Different scenarios define work differently.
-
-The question remains the same.
+Examples include a resolved case, accepted engineering task, completed workflow, reviewed document, or successful customer task.
 
 ---
 
@@ -163,7 +108,7 @@ The question remains the same.
 
 > **What did it consume, and how much Accepted Work did it produce?**
 
-Measure the resources required to perform the work:
+Measure relevant inputs such as:
 
 ```text
 model usage
@@ -172,14 +117,11 @@ tools
 retrieval
 compute
 cloud infrastructure
-latency
 retries
 human effort
 ```
 
-Then connect consumption to work that actually satisfies the acceptance criteria.
-
-Conceptually:
+Then connect that consumption to work that actually passes the acceptance criteria:
 
 ```text
 AI Resources
@@ -191,8 +133,6 @@ Verification / Acceptance Criteria
 Accepted Work
 ```
 
-This is where AI evaluation becomes part of economics.
-
 A cheaper system is not necessarily better if it produces less Accepted Work.
 
 ---
@@ -203,22 +143,9 @@ A cheaper system is not necessarily better if it produces less Accepted Work.
 
 Accepted Work is not automatically business value.
 
-The next question is whether it changed something meaningful in the business, product, or workflow.
+Ask whether it changed something meaningful, such as case resolution, cycle time, manual effort, throughput, conversion, defects, or customer task completion.
 
-Examples might include:
-
-```text
-case resolved
-workflow completed
-cycle time reduced
-manual work avoided
-engineering task accepted
-conversion improved
-customer task completed
-defect avoided
-```
-
-Where causal claims matter, observed change should be distinguished from incremental change.
+Where causal claims matter, distinguish **observed change** from **incremental change**.
 
 ---
 
@@ -226,7 +153,7 @@ Where causal claims matter, observed change should be distinguished from increme
 
 > **What was that change worth, and how credible is the claim?**
 
-Economic value may come from:
+Potential value mechanisms include:
 
 ```text
 revenue gained
@@ -238,9 +165,7 @@ cycle time shortened
 customer value created
 ```
 
-But the evidence status matters.
-
-Keep separate:
+Preserve evidence status:
 
 ```text
 measured
@@ -252,9 +177,7 @@ realized
 unknown
 ```
 
-A large modeled benefit with weak evidence should not silently become a recommendation to scale.
-
-Likewise, sensitivity analysis can test whether an economic model is resilient without proving that the modeled value was realized.
+A large modeled benefit with weak evidence should not automatically become a recommendation to scale.
 
 ---
 
@@ -262,11 +185,9 @@ Likewise, sensitivity analysis can test whether an economic model is resilient w
 
 > **What should we do next?**
 
-The purpose of AI Profitability is not simply to calculate ROI.
+The purpose is not simply to calculate ROI. It is to improve the investment decision.
 
-It is to improve the investment decision.
-
-Possible actions may include:
+Possible actions include:
 
 ```text
 SCALE
@@ -278,7 +199,7 @@ PAUSE
 RETIRE
 ```
 
-For example:
+Typical patterns:
 
 ```text
 Evidence deficit
@@ -294,42 +215,34 @@ Strong evidence + attractive next-dollar economics
 → SCALE
 ```
 
-Every action should also establish what needs to be reassessed next.
+Every action should include a reassessment trigger.
 
 ---
 
-# One framework, different levels of detail
-
-The relationship between the field conversation and the full operating model is:
+# One framework, two levels of detail
 
 ```text
 FIELD CONVERSATION            AI VALUE LOOP
 
 WORK                       →  FRAME
-
 MEASURE                    →  MEASURE + VERIFY
-
 OUTCOME                    →  BUSINESS OUTCOME
-
 VALUE                      →  ECONOMIC VALUE + TEST
-
 ACTION                     →  DECIDE + ALLOCATE
                               + PROTECT + REASSESS
 ```
 
-Practitioners do not need to introduce every stage in every conversation.
+The five-question flow is the simple field entry point.
 
-The field conversation provides the simple entry point.
+The AI Value Loop provides the deeper operating model when more rigor is needed.
 
-The AI Value Loop provides the rigor underneath it when deeper analysis is required.
-
-The model builds on earlier **Token-to-Value** measurement work and **Value-to-Action** decision research. Those ideas are now unified into the AI Value Loop rather than presented as separate field frameworks.
+It builds on earlier **Token-to-Value** measurement work and **Value-to-Action** decision research, now unified into one framework.
 
 ---
 
-# Standardize the questions, customize the answers
+# Standardize the reasoning, customize the workload
 
-Across AI workloads, teams should consistently ask:
+Across workloads, teams should consistently ask:
 
 ```text
 What work are we trying to accomplish?
@@ -341,7 +254,7 @@ What evidence supports the claim?
 What action is justified?
 ```
 
-But different partner types and workloads should define their own:
+But each workload should define its own:
 
 ```text
 unit of work
@@ -353,8 +266,6 @@ cost attribution
 evidence requirements
 decision thresholds
 ```
-
-Therefore:
 
 > **Standardize the reasoning and evidence discipline. Customize the workload and business semantics deliberately.**
 
@@ -369,32 +280,22 @@ No single system owns AI Profitability.
 ```text
 COST / USAGE
 FinOps, billing, infrastructure, runtime telemetry
-        │
         +
 ACCEPTED WORK
-Evaluation, acceptance, workflow evidence
-        │
+Evaluation and workflow evidence
         +
 BUSINESS OUTCOME
 Operational and business systems
-        │
         +
 ECONOMIC REASONING
 Value, incrementality, resilience
-        │
-        ▼
+        ↓
 DECISION
 ```
 
-FinOps can provide cost truth.
+FinOps provides cost evidence. Runtime and evaluation systems provide work evidence. Business systems provide outcome evidence.
 
-Runtime and evaluation systems provide work and acceptance evidence.
-
-Business systems provide outcome evidence.
-
-Economic reasoning connects those sources to an investment decision.
-
-They should be joined without pretending they represent the same kind of evidence.
+AI Profitability connects them to an investment decision without pretending they are the same kind of evidence.
 
 ---
 
@@ -402,7 +303,7 @@ They should be joined without pretending they represent the same kind of evidenc
 
 AI Profitability is broader than any individual product.
 
-Microsoft capabilities can support different parts of the evidence chain—for example:
+Microsoft capabilities can support different parts of the evidence chain:
 
 ```text
 Cost / allocation
@@ -418,18 +319,18 @@ Business outcomes
 → partner/customer operational systems
 ```
 
-The conversation should start with the work and economic problem, then connect the appropriate capabilities—not start from a product catalog.
+Start with the work and economic problem, then map the right capabilities—not the other way around.
 
 ---
 
 # What good looks like
 
-A useful AI Profitability conversation should leave the partner clearer on:
+A useful AI Profitability conversation should leave the partner clear on:
 
 1. What work are we trying to accomplish?
 2. What counts as Accepted Work?
-3. What does that work actually consume and cost?
-4. What outcome should change?
+3. What does that work consume and cost?
+4. What outcome changed?
 5. What evidence do we have?
 6. What value can we reasonably claim?
 7. What remains unknown?
